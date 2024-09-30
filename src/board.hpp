@@ -1,25 +1,25 @@
 #ifndef BOARD_HPP
 #define BOARD_HPP
 
-#include <vector>
+#include <array>
+#include <cstdint>
 
-enum MARK { EMPTY, BLACK, WHITE };
+enum class MARK { EMPTY, BLACK, WHITE };
 
 class Board {
-    std::vector<std::vector<MARK>> board;
-    MARK turn;
-
-    bool isLegalMove(int row, int col);
-    bool checkDirection(int row, int col, int dRow, int dCol, MARK player);
-
 public:
     Board();
-    ~Board();
+    void printBoard() const;
+    bool makeMove(int row, int col, MARK player);
+    uint64_t flipPieces(int row, int col, MARK player); // Sin const
+    bool canMakeMove(int row, int col, MARK player) const;
+    bool hasValidMoves(MARK player) const;
+    int countPieces(MARK player) const;
+    uint64_t getBoard() const;
+    bool isCornerOccupied(MARK player) const;
 
-    void print();
-    bool makeMove(int row, int col);
-    bool hasLegalMoves(MARK player);
-    MARK getWinner();
+private:
+    std::array<std::array<MARK, 8>, 8> grid;
 };
 
-#endif 
+#endif // BOARD_HPP

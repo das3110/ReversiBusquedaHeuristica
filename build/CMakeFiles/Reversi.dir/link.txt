@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Reversi.dir/src/main.cpp.o CMakeFiles/Reversi.dir/src/board.cpp.o CMakeFiles/Reversi.dir/src/random_player.cpp.o -o Reversi 

@@ -4,4 +4,4 @@ project(Reversi)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Reversi src/main.cpp src/board.cpp)
+add_executable(Reversi src/main.cpp src/board.cpp src/random_player.cpp)

@@ -1,0 +1,3 @@
+/mnt/c/Users/isiol/OneDrive/Escritorio/i/bh2/BusquedaHeuristica/build/CMakeFiles/Reversi.dir
+/mnt/c/Users/isiol/OneDrive/Escritorio/i/bh2/BusquedaHeuristica/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/isiol/OneDrive/Escritorio/i/bh2/BusquedaHeuristica/build/CMakeFiles/rebuild_cache.dir
